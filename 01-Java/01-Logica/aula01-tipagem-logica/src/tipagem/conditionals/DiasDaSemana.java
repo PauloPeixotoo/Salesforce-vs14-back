@@ -11,22 +11,22 @@ public class DiasDaSemana {
 
         switch (dia) {
             case 1:
-                System.out.println("Segunda");
+                System.out.println("Segunda.");
                 break;
             case 2:
-                System.out.println("Terca");
+                System.out.println("Terça.");
                 break;
             case 3:
-                System.out.println("Quarta");
+                System.out.println("Quarta.");
                 break;
             case 4:
-                System.out.println("Quinta");
+                System.out.println("Quinta.");
                 break;
             case 5:
-                System.out.println("Sexta");
+                System.out.println("Sexta.");
                 break;
             default:
-                System.out.println("Valor inválido, digite de 1 a 5 para saber o dia da semana");
+                System.out.println("Valor inválido, digite de 1 a 5 para saber o dia da semana.");
         }
         sc.close();
     }
