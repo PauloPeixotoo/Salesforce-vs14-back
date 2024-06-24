@@ -1,17 +1,16 @@
-# Use postgres/example user/password credentials
-version: '3.9'
+version: '3.1'
 
 services:
-    postgres:
-        image: postgres:16-alpine
-        container_name: bd-postgres16
+    mysql:
+        image: mysql
+        container_name: bd-mysql
         environment:
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: 123456
-            POSTGRES_DB: vemDBC
+            MYSQL_USER: mysql
+            MYSQL_PASSWORD: 123456
+            MYSQL_DB: vemDBC
         ports:
             - "5432:5432"
         volumes:
-            - data_postgres:/var/lib/postgresql/data
+            - data_mysql:/var/lib/mysql/data
 volumes:
-    data_postgres:
+    data_mysql:
