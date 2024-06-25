@@ -26,7 +26,7 @@ public class Exercicio9 {
                 } else {
                     System.out.print("Digite a palavra em inglês: ");
                     palavra = sc.nextLine().trim().toLowerCase();
-                    
+
                     String resultado = traducao(palavra, "ingles-portugues");
                     System.out.printf("A tradução de '%s' é '%s'%n%n", palavra, resultado);
                 }
