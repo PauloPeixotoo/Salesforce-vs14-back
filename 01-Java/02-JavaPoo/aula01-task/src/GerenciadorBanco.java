@@ -9,6 +9,11 @@ public class GerenciadorBanco {
     }
 
     public void adicionarConta(ContaBancaria conta){
+        if(conta == null){
+            System.out.println("Conta inválida!");
+                    return;
+        }
+
         if(buscarConta(conta.getNumeroConta()) != null){
             System.out.println("A conta já existe, tente outro número!");
             return;
@@ -19,9 +24,14 @@ public class GerenciadorBanco {
     }
 
     public ContaBancaria buscarConta(String numeroConta){
-        for(int i = 0; i < contas.size(); i++){
-            if(contas.get(i).numeroConta.equals(numeroConta)){
-                return contas.get(i);
+        if(numeroConta == null || numeroConta.isEmpty()){
+            System.out.println("Número da conta inválida!");
+            return null;
+        }
+
+        for(ContaBancaria conta : contas){
+            if(conta.getNumeroConta().equals(numeroConta)){
+                return conta;
             }
         }
 
@@ -29,6 +39,11 @@ public class GerenciadorBanco {
     }
 
     public void removerConta(String numeroConta){
+        if(numeroConta == null || numeroConta.isEmpty()){
+            System.out.println("Número da conta inválido!");
+            return;
+        }
+
         ContaBancaria conta = buscarConta(numeroConta);
         if(conta == null){
             System.out.println("A conta que deseja remover não existe!");
