@@ -1,7 +1,10 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class GerenciadorBanco {
     public List<ContaBancaria> contas;
 
-    private GerenciadorBanco(){
+    public GerenciadorBanco(){
         this.contas = new ArrayList<ContaBancaria>();
     }
 
@@ -17,7 +20,7 @@ public class GerenciadorBanco {
 
     public ContaBancaria buscarConta(String numeroConta){
         for(int i = 0; i < contas.size(); i++){
-            if(contas.get(i).numeroConta.matches(numeroConta)){
+            if(contas.get(i).numeroConta.equals(numeroConta)){
                 return contas.get(i);
             }
         }
