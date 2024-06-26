@@ -38,9 +38,9 @@ public class GerenciadorBanco {
     public void listarContas(){
         System.out.println("Contas registradas: ");
         for(int i = 0; i < contas.size(); i++){
-            System.out.println("Número da conta: " + contas.get(i).numeroConta);
-            System.out.println("Titular: " + contas.get(i).titular);
-            System.out.println("Saldo: " + contas.get(i).saldo);
+            System.out.println("Número da conta: " + contas.get(i).getNumeroConta());
+            System.out.println("Titular: " + contas.get(i).getTitular());
+            System.out.println("Saldo: " + contas.get(i).getSaldo());
             System.out.println();
         }
     }
