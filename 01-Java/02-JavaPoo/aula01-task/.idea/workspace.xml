@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d4fdc18-a91b-4486-aefd-beaf0b4ebb70" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ContaBancaria/ClassConta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContaBancaria/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tesste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ContaBancaria/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContaBancaria/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719435036807</updated>
-      <workItem from="1719435037840" duration="2042000" />
+      <workItem from="1719435037840" duration="2339000" />
     </task>
     <servers />
   </component>

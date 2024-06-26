@@ -1,15 +1,13 @@
-package ContaBancaria;
-
 import java.util.Scanner;
 
-public class ClassConta {
+public class ContaBancaria {
     public String numeroConta;
     public String titular;
     public double saldo;
 
     Scanner sc = new Scanner(System.in);
 
-    public ClassConta(String numeroConta, String titular, double saldo) {
+    public ContaBancaria(String numeroConta, String titular, double saldo) {
         this.numeroConta = numeroConta;
         this.titular = titular;
         this.saldo = saldo;
