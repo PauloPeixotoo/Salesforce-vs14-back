@@ -1,5 +1,7 @@
 package Exercicios;
 
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Exercicio5 {
@@ -23,9 +25,8 @@ public class Exercicio5 {
         double porcentagemBrancos = ((double) brancos / totalVotos) * 100;
         double porcentagemNulos = ((double) nulos / totalVotos) * 100;
 
-        System.out.println("Votos validos: " + porcentagemValidos);
-        System.out.println("Votos brancos: " + porcentagemBrancos);
-        System.out.println("Votos nulos: " + porcentagemNulos);
-
+        System.out.printf("\nVotos brancos: %.2f%%", porcentagemBrancos);
+        System.out.printf("\nVotos nulos: %.2f%%", porcentagemNulos);
+        System.out.printf("\nVotos validos: %.2f%%", porcentagemValidos);
     }
 }
