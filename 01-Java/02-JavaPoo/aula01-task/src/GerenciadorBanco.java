@@ -6,7 +6,7 @@ public class GerenciadorBanco {
     }
 
     public void adicionarConta(ContaBancaria conta){
-        if(buscarConta(conta.getNumeroConta) != null){
+        if(buscarConta(conta.getNumeroConta()) != null){
             System.out.println("A conta já existe, tente outro número!");
             return;
         }
