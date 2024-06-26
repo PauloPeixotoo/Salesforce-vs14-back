@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GerenciadorBanco {
-    public List<ContaBancaria> contas;
+    private List<ContaBancaria> contas;
 
     public GerenciadorBanco(){
         this.contas = new ArrayList<ContaBancaria>();
@@ -25,7 +25,7 @@ public class GerenciadorBanco {
 
     public ContaBancaria buscarConta(String numeroConta){
         if(numeroConta == null || numeroConta.isEmpty()){
-            System.out.println("Número da conta inválida!");
+            System.out.println("Número da conta inválido!");
             return null;
         }
 
