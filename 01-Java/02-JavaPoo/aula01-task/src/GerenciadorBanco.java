@@ -54,6 +54,11 @@ public class GerenciadorBanco {
     }
 
     public void listarContas(){
+        if (contas.isEmpty()){
+            System.out.println("Não há contas registradas!");
+            return;
+        }
+
         System.out.println("Contas registradas: ");
         for(int i = 0; i < contas.size(); i++){
             System.out.println("Número da conta: " + contas.get(i).getNumeroConta());
