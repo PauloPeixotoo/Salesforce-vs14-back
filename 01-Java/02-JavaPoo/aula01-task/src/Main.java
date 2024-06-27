@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -44,6 +43,9 @@ public class Main {
                     System.out.println("Número da conta que deseja buscar: ");
                     String numero = sc.nextLine();
                     conta = gerenciador.buscarConta(numero);
+                    if (conta == null) {
+                        break;
+                    }
                     gerenciador.listarUmaConta(conta);
                     break;
                 case 4:
@@ -55,8 +57,10 @@ public class Main {
                     System.out.println("Qual o número da sua conta: ");
                     numero = sc.nextLine();
                     conta = gerenciador.buscarConta(numero);
-
-                    System.out.println("Saldo da conta: "+ conta.getSaldo());
+                    if (conta == null) {
+                        break;
+                    }
+                    System.out.println("Saldo da conta: " + conta.getSaldo());
                     System.out.println("Valor do saque");
                     conta.sacar(sc.nextDouble());
                     break;
@@ -64,7 +68,9 @@ public class Main {
                     System.out.println("Qual o número da sua conta: ");
                     numero = sc.nextLine();
                     conta = gerenciador.buscarConta(numero);
-
+                    if (conta == null) {
+                        break;
+                    }
                     System.out.println("Valor R$ ");
                     conta.depositar(sc.nextDouble());
                     break;

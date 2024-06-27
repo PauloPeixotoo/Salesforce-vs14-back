@@ -11,7 +11,7 @@ public class GerenciadorBanco {
     public void adicionarConta(ContaBancaria conta){
         if(conta == null){
             System.out.println("Conta inválida!");
-                    return;
+            return;
         }
 
         if(buscarConta(conta.getNumeroConta()) != null){
@@ -24,6 +24,11 @@ public class GerenciadorBanco {
     }
 
     public ContaBancaria buscarConta(String numeroConta){
+        if (contas.isEmpty()){
+            System.out.println("Não há contas registradas, adicione uma conta antes de utilizar essa funcionalidade!");
+            return(null);
+        }
+
         if(numeroConta == null || numeroConta.isEmpty()){
             System.out.println("Número da conta inválido!");
             return null;
@@ -39,6 +44,11 @@ public class GerenciadorBanco {
     }
 
     public void removerConta(String numeroConta){
+        if (contas.isEmpty()){
+            System.out.println("Não há contas registradas, adicione uma conta antes de utilizar essa funcionalidade!");
+            return;
+        }
+
         if(numeroConta == null || numeroConta.isEmpty()){
             System.out.println("Número da conta inválido!");
             return;
