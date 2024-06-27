@@ -10,7 +10,13 @@ public class ContaBancaria {
     public ContaBancaria(String numeroConta, String titular, double saldo) {
         this.numeroConta = numeroConta;
         this.titular = titular;
-        this.saldo = saldo;
+        this.setSaldo(saldo);
+    }
+
+    public ContaBancaria (){
+        this.numeroConta = "";
+        this.titular = "";
+        this.saldo = 0;
     }
 
     public String getNumeroConta() {
@@ -34,7 +40,7 @@ public class ContaBancaria {
     }
 
     public void setSaldo(double saldo) {
-        this.saldo = saldo;
+        this.saldo = saldo < 0 ? 0 : saldo;
     }
 
    public void depositar(double valor){

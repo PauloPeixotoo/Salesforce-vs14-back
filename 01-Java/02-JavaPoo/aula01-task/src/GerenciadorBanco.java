@@ -61,10 +61,14 @@ public class GerenciadorBanco {
 
         System.out.println("Contas registradas: ");
         for(int i = 0; i < contas.size(); i++){
-            System.out.println("Número da conta: " + contas.get(i).getNumeroConta());
-            System.out.println("Titular: " + contas.get(i).getTitular());
-            System.out.println("Saldo: " + contas.get(i).getSaldo());
-            System.out.println();
+            listarUmaConta(contas.get(i));
         }
+    }
+
+    public void listarUmaConta(ContaBancaria conta){
+        System.out.println("Número da conta: " + conta.getNumeroConta());
+        System.out.println("Titular: " + conta.getTitular());
+        System.out.println("Saldo: " + conta.getSaldo());
+        System.out.println();
     }
 }
