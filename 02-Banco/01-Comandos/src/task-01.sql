@@ -36,30 +36,47 @@ FROM VEM_SER.PESSOA
 
 CREATE TABLE ESTUDANTE
 (
-    id_estudante    NUMBER  NOT NULL,
+    id_estudante    NUMBER PRIMARY KEY NOT NULL,
     nome            VARCHAR2(200) NOT NULL,
-    data_nascimento DATE    NOT NULL,
+    data_nascimento DATE NOT NULL,
     nr_matricula    NUMBER(20) NOT NULL,
     ativo           CHAR(1) NOT NULL CHECK (ativo IN ('S', 'N'))
 );
 
 CREATE SEQUENCE seq_estudante
-    START WITH 1
-    INCREMENT BY 1;
+START WITH 1
+INCREMENT BY 1;
 NOCACHE
 NOCYCLE;
 
 INSERT INTO ESTUDANTE (id_estudante, nome, data_nascimento, nr_matricula, ativo)
-VALUES (nextval('seq_estudante'), 'Alice Ferreira', '2000-01-15', '2021101', 'S'),
-       (nextval('seq_estudante'), 'Carlos Pinto', '1999-04-22', '2021102', 'N'),
-       (nextval('seq_estudante'), 'Beatriz Silva', '2001-08-30', '2021103', 'S'),
-       (nextval('seq_estudante'), 'Diego Costa', '1998-11-05', '2021104', 'S'),
-       (nextval('seq_estudante'), 'Elena Rodrigues', '2002-03-14', '2021105', 'N'),
-       (nextval('seq_estudante'), 'Fernando Oliveira', '2000-06-21', '2021106', 'S'),
-       (nextval('seq_estudante'), 'Gabriela Santos', '1997-09-10', '2021107', 'N'),
-       (nextval('seq_estudante'), 'Hugo Almeida', '2001-12-01', '2021108', 'S'),
-       (nextval('seq_estudante'), 'Isadora Teixeira', '1999-02-19', '2021109', 'S'),
-       (nextval('seq_estudante'), 'José Mendes', '2003-05-23', '2021110', 'N');
+VALUES (seq_estudante.NEXTVAL, 'Alice Ferreira', TO_DATE('15/01/2000', 'DD/MM/YYYY'), '2021101', 'S');
 
-SELECT *
-FROM ESTUDANTE;
+INSERT INTO ESTUDANTE (id_estudante, nome, data_nascimento, nr_matricula, ativo)
+VALUES (seq_estudante.NEXTVAL, 'Carlos Pinto', TO_DATE('22/04/1999', 'DD/MM/YYYY'), '2021102', 'N');
+
+INSERT INTO ESTUDANTE (id_estudante, nome, data_nascimento, nr_matricula, ativo)
+VALUES (seq_estudante.NEXTVAL, 'Beatriz Silva', TO_DATE('30/08/2001', 'DD/MM/YYYY'), '2021103', 'S');
+
+INSERT INTO ESTUDANTE (id_estudante, nome, data_nascimento, nr_matricula, ativo)
+VALUES (seq_estudante.NEXTVAL, 'Diego Costa', TO_DATE('05/11/1998', 'DD/MM/YYYY'), '2021104', 'S');
+
+INSERT INTO ESTUDANTE (id_estudante, nome, data_nascimento, nr_matricula, ativo)
+VALUES (seq_estudante.NEXTVAL, 'Elena Rodrigues', TO_DATE('14/03/2002', 'DD/MM/YYYY'), '2021105', 'N');
+
+INSERT INTO ESTUDANTE (id_estudante, nome, data_nascimento, nr_matricula, ativo)
+VALUES (seq_estudante.NEXTVAL, 'Fernando Oliveira', TO_DATE('21/06/2000', 'DD/MM/YYYY'), '2021106', 'S');
+
+INSERT INTO ESTUDANTE (id_estudante, nome, data_nascimento, nr_matricula, ativo)
+VALUES (seq_estudante.NEXTVAL, 'Gabriela Santos', TO_DATE('10/09/1997', 'DD/MM/YYYY'), '2021107', 'N');
+
+INSERT INTO ESTUDANTE (id_estudante, nome, data_nascimento, nr_matricula, ativo)
+VALUES (seq_estudante.NEXTVAL, 'Hugo Almeida', TO_DATE('01/12/2001', 'DD/MM/YYYY'), '2021108', 'S');
+
+INSERT INTO ESTUDANTE (id_estudante, nome, data_nascimento, nr_matricula, ativo)
+VALUES (seq_estudante.NEXTVAL, 'Isadora Teixeira', TO_DATE('19/02/1999', 'DD/MM/YYYY'), '2021109', 'S');
+
+INSERT INTO ESTUDANTE (id_estudante, nome, data_nascimento, nr_matricula, ativo)
+VALUES (seq_estudante.NEXTVAL, 'José Mendes', TO_DATE('23/05/2003', 'DD/MM/YYYY'), '2021110', 'N');
+
+SELECT * FROM ESTUDANTE;
