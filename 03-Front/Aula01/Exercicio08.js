@@ -1,16 +1,23 @@
-function encontrarParesEIndices() {
-    const lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
-    let paresComIndices = [];
+const pedidos = [
+    { id: 1, nomeCliente: 'João', produto: 'Pizza de Calabresa', bebida: 'Refrigerante' },
+    { id: 2, nomeCliente: 'Maria', produto: 'Pizza Marguerita', bebida: 'Água' },
+    { id: 3, nomeCliente: 'José', produto: 'Pizza de Frango com Catupiry', bebida: 'Suco de Laranja' },
+    { id: 4, nomeCliente: 'Ana', produto: 'Pizza Quatro Queijos', bebida: 'Cerveja' },
+    { id: 5, nomeCliente: 'Carlos', produto: 'Pizza de Pepperoni', bebida: 'Refrigerante' },
+];
 
-    lista.forEach((numero, indice) => {
-        if (numero % 2 === 0) {
-            paresComIndices.push(`Os num pares da lista são: ${numero} e possuem o índice: ${indice}`);
-        }
-    });
+const pedidosPizza = pedidos.map(pedido => pedido.produto);
+console.log("No dia de hoje os pedidos de pizza foram:");
+console.log(pedidosPizza);
 
-    paresComIndices.forEach(item => {
-        console.log(item);
-    });
-}
+const clientesRefrigerante = pedidos.filter(pedido => pedido.bebida === 'Refrigerante').map(pedido => pedido.nomeCliente);
+console.log("\nOs clientes que fizeram pedido com refrigerante foram:");
+console.log(clientesRefrigerante);
 
-encontrarParesEIndices();
+const clientesSuco = pedidos.filter(pedido => pedido.bebida.includes('Suco')).map(pedido => pedido.nomeCliente);
+console.log("\nOs clientes que fizeram pedido com suco foram:");
+console.log(clientesSuco);
+
+const clientesCerveja = pedidos.filter(pedido => pedido.bebida === 'Cerveja').map(pedido => pedido.nomeCliente);
+console.log("\nOs clientes que fizeram pedido com cerveja foram:");
+console.log(clientesCerveja);
