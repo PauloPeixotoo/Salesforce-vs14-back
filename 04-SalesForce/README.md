@@ -17,6 +17,8 @@
 ### Exibição:
 - Mostrar todas as possíveis oportunidades da Black Panther.
 
+![Oportunidades](assets/Oportunidades%20Black%20Panthers.png)
+
 ### Fluxo de Aprovação:
 
 ![Oportunidades](assets/Atualiza%20Processo%20Aprovacao%20OP.png)
@@ -29,6 +31,8 @@
 ### Exibição:
 - Mostrar todos os contratos da Black Panther.
 
+![Oportunidades](assets/Contratos%20Black%20Panthers.png)
+
 ### Fluxo de Alerta:
 ![Oportunidades](assets/Vencimento%20Contrato.png)
 - Receber um alerta antes do vencimento do prazo do contrato.
@@ -39,11 +43,15 @@
 ### Exibição:
 - Exibir todos os produtos cadastrados.
 
+![Oportunidades](assets/Produtos%20Black%20Panthers.png)
+
 ---
 
 ## 5. Leads Black Panther
 ### Exibição:
 - Exibir todos os Leads que foram captados.
+
+![Oportunidades](assets/Leads%20Black%20Panthers.png)
 
 ---
 
@@ -62,6 +70,8 @@
 ### Exibição:
 - Exibir todas as tarefas em aberto relacionadas aos leads.
 - Filtrar as tarefas com o assunto "Tentar conversão nos próximos 5 dias".
+
+![Oportunidades](assets/Tarefas%20Black%20Panthers.png)
 
 ### Fluxo de Tarefas:
 ![Oportunidades](assets/Lead_Qualificado.png)
