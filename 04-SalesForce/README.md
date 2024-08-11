@@ -18,6 +18,8 @@
 - Mostrar todas as possíveis oportunidades da Black Panther.
 
 ### Fluxo de Aprovação:
+
+![Oportunidades](assets/Atualiza%20Processo%20Aprovacao%20OP.png)
 - **Aprovação de valores**: O valor da oportunidade deve ser maior que R$25.000 para ser encaminhado para aprovação.
 - **Fechar Negócio**: Caso o valor seja inferior a R$25.000, a oportunidade deve ser enviada para "Fechar Negócio".
 
@@ -28,6 +30,7 @@
 - Mostrar todos os contratos da Black Panther.
 
 ### Fluxo de Alerta:
+![Oportunidades](assets/Vencimento%20Contrato.png)
 - Receber um alerta antes do vencimento do prazo do contrato.
 
 ---
@@ -50,6 +53,7 @@
   - **Países não qualificados**: Argentina, Brasil, China, Chile ou Japão.
 
 ### Fluxo para Lead Desqualificado:
+![Oportunidades](assets/Lead_Qualificado.png)
 - Iniciar um fluxo específico para leads desqualificados.
 
 ---
@@ -58,3 +62,7 @@
 ### Exibição:
 - Exibir todas as tarefas em aberto relacionadas aos leads.
 - Filtrar as tarefas com o assunto "Tentar conversão nos próximos 5 dias".
+
+### Fluxo de Tarefas:
+- Tenta conversão do lead nos proximos 5 dias
+![Oportunidades](assets/Lead_Qualificado.png)
