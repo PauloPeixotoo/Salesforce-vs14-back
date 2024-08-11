@@ -64,5 +64,5 @@
 - Filtrar as tarefas com o assunto "Tentar conversão nos próximos 5 dias".
 
 ### Fluxo de Tarefas:
-- Tenta conversão do lead nos proximos 5 dias
 ![Oportunidades](assets/Lead_Qualificado.png)
+- Tenta conversão do lead nos proximos 5 dias
