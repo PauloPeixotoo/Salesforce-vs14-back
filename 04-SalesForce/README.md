@@ -91,3 +91,18 @@
 ### Fluxo de Tarefas:
 ![Oportunidades](assets/Lead_Qualificado.png)
 - Tenta conversão do lead nos proximos 5 dias
+
+---
+
+## 10. Perfis
+
+![Oportunidades](assets/Perfis.png)
+
+### CEO
+- Possui todas as permissões idênticas às do Administrador.
+
+### Gerente
+- Tem autorização para criar, editar e deletar em todos os objetos presentes no sistema.
+
+### Vendedor
+- Não tem permissão para modificar ou excluir produtos, mas pode registrar novas oportunidades.
