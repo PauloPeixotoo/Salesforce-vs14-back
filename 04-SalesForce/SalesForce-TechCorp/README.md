@@ -4,36 +4,24 @@
 
 A TechCorp é uma empresa fictícia de tecnologia que desenvolve soluções inovadoras para o mercado de CRM. Recentemente, a empresa decidiu migrar seu sistema de gerenciamento de clientes para a plataforma Salesforce. Como parte do treinamento, os desenvolvedores serão responsáveis por configurar e customizar o Salesforce para atender às necessidades específicas da TechCorp.
 
-## Personagens
+## O Projeto
 
-- **Ana Silva**: CEO da TechCorp, visionária e focada em inovação.
-- **Carlos Mendes**: Gerente de Vendas, precisa de um sistema eficiente para gerenciar leads e oportunidades.
-- **Beatriz Oliveira**: Gerente de Suporte ao Cliente, busca melhorar a experiência do cliente com um sistema de tickets eficiente.
-- **João Pereira**: Desenvolvedor Sênior, responsável por liderar a equipe de desenvolvimento na customização do Salesforce.
-
-## Objetivos do Projeto
-
-### 1. Administração
-
-- Configurar objetos personalizados para gerenciar dados específicos da TechCorp.
-- Criar perfis e permissões para diferentes tipos de usuários (vendas, suporte, administração).
-
-### 2. Back End
+### 21. Back End
 
 - Desenvolver classes Apex para lógica de negócios complexa.
 - Implementar integrações com sistemas externos usando APIs RESTful.
 
-### 3. DML (Data Manipulation Language)
+### 2. DML (Data Manipulation Language)
 
 - Realizar operações DML (inserção, atualização, exclusão) em registros Salesforce.
 - Utilizar SOQL e SOSL para consultas eficientes.
 
-### 4. Classes e Classes de Teste
+### 3. Classes e Classes de Teste
 
 - Criar classes Apex para encapsular a lógica de negócios.
 - Desenvolver classes de teste para garantir a cobertura de código e a qualidade do software.
 
-### 5. Triggers
+### 4. Triggers
 
 - Implementar triggers para automatizar processos de negócios.
 - Garantir que os triggers sejam eficientes e evitem loops recursivos.
@@ -43,7 +31,15 @@ A TechCorp é uma empresa fictícia de tecnologia que desenvolve soluções inov
 ### 1. Configuração Inicial
 
 - Criação de objetos personalizados: Cliente, Produto, Pedido.
-- Configuração de perfis e permissões para diferentes usuários.
+
+`Cliente`
+![Criar Cliente](image.png)
+
+`Produto`
+![Criar Produto](image-1.png)
+
+`Pedido`
+![Criar Pedido](image-2.png)
 
 ### 2. Desenvolvimento de Classes Apex
 
