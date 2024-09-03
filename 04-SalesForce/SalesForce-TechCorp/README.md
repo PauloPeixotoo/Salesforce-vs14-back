@@ -192,7 +192,7 @@ A TechCorp é uma empresa fictícia de tecnologia que desenvolve soluções inov
 - **Problema**: Testar a classe que atualiza os endereços dos contatos com base no endereço da conta.
 - **Solução**: Criar uma classe de teste que verifique a atualização dos endereços dos contatos.
 
-![Busca endereco](assets/image-1.png)
+![Busca endereco](image.png)
 
 ## Tema Extra: Integração com API de CEP dos Correios
 
