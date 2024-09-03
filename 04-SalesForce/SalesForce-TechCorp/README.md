@@ -66,21 +66,6 @@ A TechCorp é uma empresa fictícia de tecnologia que desenvolve soluções inov
 
 ![PedidoTrigger](assets/image-6.png)
 
-### 4. Criação de Classes de Teste
-
-- Testes para `ClienteService` e `PedidoService` garantindo cobertura de código.
-
-- Testes para `ClienteService`
-
-![TestesClienteService](assets/image-8.png)
-![TestesClienteService](assets/image-9.png)
-![TestesClienteService](assets/image-10.png)
-
-- Testes para `PedidoService`
-
-![TestesClienteService](assets/image-11.png)
-![TestesClienteService](assets/image-12.png)
-
 ## Problemas Avançados para Resolução com Código Apex
 
 ### 1. Validação de Email
@@ -157,43 +142,6 @@ A TechCorp é uma empresa fictícia de tecnologia que desenvolve soluções inov
 
 ![Criacao de Tarefa](assets/image-24.png)
 
-## Problemas com Classes de Teste
-
-### 1. Teste de Validação de Email
-
-- **Problema**: Testar a classe que valida o formato e domínio do email.
-- **Solução**: Criar uma classe de teste que verifique se a validação de email está funcionando corretamente.
-
-![Valida Email](assets/image-25.png)
-
-### 2. Teste de Cálculo de Desconto
-
-- **Problema**: Testar a classe que calcula o desconto baseado na quantidade de produtos.
-- **Solução**: Desenvolver uma classe de teste que valide o cálculo do desconto.
-
-![Teste Calculo de Desconto](assets/image-26.png)
-
-### 3. Teste de Conversão de Moeda
-
-- **Problema**: Testar a classe que converte valores de uma moeda para outra.
-- **Solução**: Criar uma classe de teste que verifique a precisão da conversão de moeda.
-
-![Teste Para conversao moeda](assets/image.png)
-
-### 4. Teste de Geração de Relatórios
-
-- **Problema**: Testar a classe que gera e envia relatórios mensais de vendas.
-- **Solução**: Desenvolver uma classe de teste que valide a geração e envio de relatórios.
-
-![Teste Gerar Relatorios](assets/image-27.png)
-
-### 5. Teste de Atualização de Endereço
-
-- **Problema**: Testar a classe que atualiza os endereços dos contatos com base no endereço da conta.
-- **Solução**: Criar uma classe de teste que verifique a atualização dos endereços dos contatos.
-
-![Busca endereco](image.png)
-
 ## Tema Extra: Integração com API de CEP dos Correios
 
 ### Objetivo
@@ -211,3 +159,7 @@ Realizar a conexão com a API de CEP dos Correios para buscar informações de e
 - Classe Apex para realizar chamadas HTTP à API dos Correios.
 
 ![API Correios](assets/image-29.png)
+
+### 2. Melhorias com mais tempo
+
+## 
