@@ -34,11 +34,11 @@ A TechCorp é uma empresa fictícia de tecnologia que desenvolve soluções inov
 
 - Criar cliente.
 
-![Criar Cliente](assets/image.png)
+![alt text](assets/imageCriarCliente.png)
 
 - Criar Produto.
 
-![Criar Produto](assets/image-1.png)
+![Criar Produto](assets/imageCriarProduto.png)
 
 - Criar Pedido.
 
@@ -148,13 +148,7 @@ A TechCorp é uma empresa fictícia de tecnologia que desenvolve soluções inov
 
 Realizar a conexão com a API de CEP dos Correios para buscar informações de endereço.
 
-### 1. Configuração da API
-
-- Obtenha a URL da API dos Correios para consulta de CEP.
-
-![Consulta pela API do CEP](assets/image-28.png)
-
-### 2. Desenvolvimento da Classe Apex
+### 1. Desenvolvimento da Classe Apex para 
 
 - Classe Apex para realizar chamadas HTTP à API dos Correios.
 
