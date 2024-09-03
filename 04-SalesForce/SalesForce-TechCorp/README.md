@@ -176,7 +176,7 @@ A TechCorp é uma empresa fictícia de tecnologia que desenvolve soluções inov
 - **Problema**: Testar a classe que converte valores de uma moeda para outra.
 - **Solução**: Criar uma classe de teste que verifique a precisão da conversão de moeda.
 
-
+![Teste Para conversao moeda](image.png)
 
 ### 4. Teste de Geração de Relatórios
 
@@ -189,6 +189,8 @@ A TechCorp é uma empresa fictícia de tecnologia que desenvolve soluções inov
 
 - **Problema**: Testar a classe que atualiza os endereços dos contatos com base no endereço da conta.
 - **Solução**: Criar uma classe de teste que verifique a atualização dos endereços dos contatos.
+
+![Busca endereco](image-1.png)
 
 ## Tema Extra: Integração com API de CEP dos Correios
 
