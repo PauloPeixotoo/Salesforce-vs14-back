@@ -156,4 +156,8 @@ Realizar a conexão com a API de CEP dos Correios para buscar informações de e
 
 ### 2. Melhorias com mais tempo
 
-## 
+- Realizaria uma configuração mais adequada na parte da organização 
+
+- Me aprofundaria na parte de Testes, garantindo que todas as classes estejam todas funcionando perfeitamente
+
+- Realizaria uma refatoração da documentação.
