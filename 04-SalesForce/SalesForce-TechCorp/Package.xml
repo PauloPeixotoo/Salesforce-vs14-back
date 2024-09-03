@@ -11,6 +11,7 @@
     <members>MoedaConvertidaTest</members>
     <members>PedidoService</members>
     <members>PedidoServiceTest</members>
+    <members>SetupTest</members>
     <name>ApexClass</name>
   </types>
   <types>
