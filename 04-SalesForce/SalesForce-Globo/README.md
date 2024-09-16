@@ -1,6 +1,16 @@
 # Projeto Globo Salesforce
 
-Este é um projeto para demonstrar como configurar e desenvolver em Salesforce, utilizando a plataforma de desenvolvimento da Salesforce.
+## Login para Acesso à Org
+
+Para acessar a org do Salesforce e testar as implementações deste projeto, utilize as seguintes credenciais:
+
+- **URL:** [Salesforce Login](https://login.salesforce.com)
+- **Username:** avaliador@globo.com
+- **Password:** vemser1234
+
+Certifique-se de ter acesso ao ambiente de sandbox ou produção conforme necessário para testar as funcionalidades descritas neste projeto.
+
+---
 
 ## Objetivo
 
@@ -38,36 +48,48 @@ Caso alguma das informações não esteja disponível, o valor **N/A** será exi
 
 ![Resumo Pais](assets/Resumo%20Pais.png)
 
-## Endpoint customizado de Upsert de uma conta definindo o contrato de entrada e saida
+## Endpoint Customizado de Upsert de uma Conta
+
+Definindo o contrato de entrada e saída para um endpoint que realiza o Upsert (inserção ou atualização) de uma conta:
 
 ![EndPoint Upsert](assets/Account%20Upsert.png)
 
-## Endpoint customizado que faça um Insert de uma Ordem (Order) e defina os contratos de entrada e saída
+## Endpoint Customizado para Inserção de Ordem (Order)
+
+Foi desenvolvido um endpoint para inserir uma **Order** (Ordem) e definir os contratos de entrada e saída:
 
 ![EndPoint Insert](assets/Order%20Insert.png)
 
-## Implementação uma automação com interfaçe grafica para envio de notificação por e-mail sempre que uma conta for criada ou editada, conseguindo alterar o e-mail pela interface gráfica
+## Automação de Notificação por E-mail
+
+Foi implementada uma automação com interface gráfica para envio de notificação por e-mail sempre que uma conta for criada ou editada. O e-mail pode ser alterado pela interface gráfica.
 
 ![Atualiza Email da Conta](assets/Atualiza%20email%20da%20conta.png)
 
-### Sempre que uma conta é criada ou editada um email é enviado
+### Sempre que uma conta é criada ou editada, um e-mail de notificação é enviado:
 
 ![Envia email de aviso sobre conta](assets/Envia%20email%20aviso.png)
 
-## Implementação de uma automação sem uso de código para que sempre que uma nova Order seja criada o campo valor total de vendas da conta relacionada seja incrementado do valor da Order.
+## Automação para Atualizar Valor Total de Vendas
+
+Foi criada uma automação sem uso de código que incrementa o campo **Valor Total de Vendas** da conta relacionada, sempre que uma nova **Order** for criada.
 
 ![Automacao sem Codigo](assets/Automacao%20sem%20codigo.png)
 
-## Agendamento de trabalho todos os dias 00:00 para excluir orders que estão com datas maiores que 3 meses;
+## Agendamento de Trabalho para Excluir Orders
+
+Um trabalho foi agendado para ser executado todos os dias às 00:00, com o objetivo de excluir **Orders** que possuem datas maiores que 3 meses.
 
 ![Maiores que 3 meses](assets/Maiores%20que%20tres%20meses.png)
 
 ## Testes Realizados
 
-### Testes que foram realizados para que cumprisse com o necessario e garantindo a funcionabilidade das classes, triggers.
+Foram realizados testes para garantir o funcionamento correto das classes e triggers implementadas.
 
 ![Teste Realizados](assets/Testes%20Realizados.png)
 
-## Iplementação Utilizando LWC do google maps
+## Implementação de Google Maps com LWC
+
+Foi utilizado **LWC (Lightning Web Components)** para integrar o Google Maps no Salesforce.
 
 ![GoogleMap](assets/Google%20Map.png)
