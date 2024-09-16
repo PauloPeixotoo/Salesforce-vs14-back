@@ -66,7 +66,7 @@ Caso alguma das informações não esteja disponível, o valor **N/A** será exi
 
 ### Testes que foram realizados para que cumprisse com o necessario e garantindo a funcionabilidade das classes, triggers.
 
-![Testes Realizados](assets/Testes%20Realizados.png)
+![Teste Realizados](assets/Testes%20Realizados.png)
 
 ## Iplementação Utilizando LWC do google maps
 
