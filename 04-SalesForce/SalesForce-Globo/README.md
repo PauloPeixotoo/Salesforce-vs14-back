@@ -40,11 +40,11 @@ Caso alguma das informações não esteja disponível, o valor **N/A** será exi
 
 ## Endpoint customizado de Upsert de uma conta definindo o contrato de entrada e saida
 
-![EndPoint Upsert](image.png)
+![EndPoint Upsert](assets/Account%20Upsert.png)
 
 ## Endpoint customizado que faça um Insert de uma Ordem (Order) e defina os contratos de entrada e saída
 
-![Criar Conta]()
+![EndPoint Insert](assets/Order%20Insert.png)
 
 ## Implementação uma automação com interfaçe grafica para envio de notificação por e-mail sempre que uma conta for criada ou editada, conseguindo alterar o e-mail pela interface gráfica
 
