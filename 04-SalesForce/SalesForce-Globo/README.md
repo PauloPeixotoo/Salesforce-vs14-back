@@ -40,7 +40,7 @@ Caso alguma das informações não esteja disponível, o valor **N/A** será exi
 
 ## Endpoint customizado de Upsert de uma conta definindo o contrato de entrada e saida
 
-![Criar Conta]()
+![EndPoint Upsert](image.png)
 
 ## Endpoint customizado que faça um Insert de uma Ordem (Order) e defina os contratos de entrada e saída
 
@@ -68,6 +68,6 @@ Caso alguma das informações não esteja disponível, o valor **N/A** será exi
 
 ![Testes Realizados](assets/Testes%20Realizados.png)
 
-## Iplementação de um LWC Utilizando LWC do google maps
+## Iplementação Utilizando LWC do google maps
 
 ![GoogleMap](assets/Google%20Map.png)
