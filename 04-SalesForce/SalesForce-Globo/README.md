@@ -58,6 +58,10 @@ Caso alguma das informações não esteja disponível, o valor **N/A** será exi
 
 ![Automacao sem Codigo](assets/Automacao%20sem%20codigo.png)
 
-### Agendamento de trabalho todos os dias 00:00 para excluir orders que estão com datas maiores que 3 meses;
+## Agendamento de trabalho todos os dias 00:00 para excluir orders que estão com datas maiores que 3 meses;
 
 ![Maiores que 3 meses](assets/Maiores%20que%20tres%20meses.png)
+
+## Testes Realizados
+
+![Testes Realizados](assets/Testes%20Realizados.png)
