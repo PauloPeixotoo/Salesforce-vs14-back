@@ -70,4 +70,4 @@ Caso alguma das informações não esteja disponível, o valor **N/A** será exi
 
 ## Iplementação de um LWC Utilizando LWC do google maps
 
-![GoogleMap]()
+![GoogleMap](assets/Google%20Map.png)
