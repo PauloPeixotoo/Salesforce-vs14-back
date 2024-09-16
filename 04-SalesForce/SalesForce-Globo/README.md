@@ -16,7 +16,7 @@ Foi criado um objeto customizado chamado **País** com os seguintes campos:
 - **Moeda:** Campo que armazena a moeda utilizada no país.
 - **Idioma:** Campo que guarda o idioma principal do país.
 
-![Imagem criar pais](assets/image.png)
+![Imagem criar pais](assets/Criar%20Pais.png)
 
 ## Objetos Padrões Customizados
 
@@ -32,4 +32,32 @@ Foram realizadas as seguintes customizações no objeto padrão **Conta (Account
   - `I: valor do Idioma`
   - `M: valor da Moeda`
 
+![Criar Conta](assets/Criar%20Conta.png)
+
 Caso alguma das informações não esteja disponível, o valor **N/A** será exibido. A fórmula do campo de Resumo do País segue a seguinte lógica:
+
+![Resumo Pais](assets/Resumo%20Pais.png)
+
+## Endpoint customizado de Upsert de uma conta definindo o contrato de entrada e saida
+
+![Criar Conta]()
+
+## Endpoint customizado que faça um Insert de uma Ordem (Order) e defina os contratos de entrada e saída
+
+![Criar Conta]()
+
+## Implementação uma automação com interfaçe grafica para envio de notificação por e-mail sempre que uma conta for criada ou editada, conseguindo alterar o e-mail pela interface gráfica
+
+![Atualiza Email da Conta](assets/Atualiza%20email%20da%20conta.png)
+
+### Sempre que uma conta é criada ou editada um email é enviado
+
+![Envia email de aviso sobre conta](assets/Envia%20email%20aviso.png)
+
+## Implementação de uma automação sem uso de código para que sempre que uma nova Order seja criada o campo valor total de vendas da conta relacionada seja incrementado do valor da Order.
+
+![Automacao sem Codigo](assets/Automacao%20sem%20codigo.png)
+
+### Agendamento de trabalho todos os dias 00:00 para excluir orders que estão com datas maiores que 3 meses;
+
+![Maiores que 3 meses](assets/Maiores%20que%20tres%20meses.png)
