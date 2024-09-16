@@ -16,7 +16,7 @@ Foi criado um objeto customizado chamado **País** com os seguintes campos:
 - **Moeda:** Campo que armazena a moeda utilizada no país.
 - **Idioma:** Campo que guarda o idioma principal do país.
 
-![Imagem criar pais](/assets/image.png)
+![Imagem criar pais](assets/image.png)
 
 ## Objetos Padrões Customizados
 
