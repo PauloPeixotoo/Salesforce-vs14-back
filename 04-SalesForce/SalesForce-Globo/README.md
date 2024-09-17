@@ -7,8 +7,8 @@
 Para acessar a org do Salesforce e testar as implementações deste projeto, utilize as seguintes credenciais:
 
 - **URL:** [Salesforce Login](https://login.salesforce.com)
-- **Username:** _Seu e-mail cadastrado_
-- **Password:** _Sua senha_
+- **Username:** avaliador@globo.com
+- **Password:** vemser1234
 
 ⚠️ *Certifique-se de ter acesso ao ambiente de sandbox ou produção conforme necessário para testar as funcionalidades descritas neste projeto.*
 
