@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1E62FE;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+span {
+    color: red;
+}
+
+form > p {
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.067);
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+label {
+    font-size: 18px;
+    color: rgb(72, 72, 72);
+    margin-bottom: 10px;
+}
+
+input {
+    font-size: 16px;
+    color: black;
+}
+
+nav > button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+#formulario-lead > div:first-of-type {
+    border-bottom: 2px solid #1E62FE;
+}
+
+.subtitle {
+    border: none;
+    background: transparent;
+    font-weight: 500;
+    padding-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.subtitle:hover{
+    background-color: #1E62FE;
+    color: #FFF;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #1E62FE, #3572ff, #040C2C, #4179fb);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes degrade {
+    0%{
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.container {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.conteiner-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteiner-input {
+    width: 49%;
+}
+
+.contact > .conteiner-input, .address > .conteiner-input{
+    width: 100%;
+}
+
+.conteiner-inputCase {
+    width: 100%;
+}
+
+.lead-form {
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.lead-form input,
+.lead-form select,
+.lead-form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+.lead-form button {
+    color: #1E62FE;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #1E62FE;
+}
+
+.lead-form button:hover {
+    background-color: #1E62FE;
+    color: #FFF;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    resize: none;
+    font-size: 18px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button > button {
+    font-size: 25px;
+}
+
+footer {
+    background-color:#1E62FE;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu {
+    width: 50px;
+    height: 40px;
+    color: #FFF;
+}
+
+.modal-main {
+    display: flex;
+    justify-content: end;
+}
+
+.model {
+    position: fixed;
+    width: 50vw;
+    height: 100%;
+    background-color: #ffffffc0;    
+}
+
+.closeMenu {
+    width: 30px;
+    height: 30px;
+    margin: 20px 20px;
+}
+
+.buttonMenu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.btn-menu > button {
+    font-size: 20px;
+    background: #FFF ;
+    border: none;
+    cursor: pointer;
+    color: #1E62FE;
+    padding: 10px;
+    text-align: center;
+}
+
+.click {
+    background-color: #1E62FE;
+    color: #FFF;
+}
+
+.btn-menu > .click {
+    background-color: #1E62FE;
+    color: #FFF;
+}
+
+.btn-modal {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+@media only screen and (max-width: 719px) {
+    .name {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .name > .conteiner-input {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 594px) {
+    .subtitle {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    nav > button {
+        display: inline-block;
+    }
+
+  }

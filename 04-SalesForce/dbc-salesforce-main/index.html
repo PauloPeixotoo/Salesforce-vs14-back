@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <title>Global</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="modal-main">
+        <div class="model hidden" id="model">
+            <div class="btn-modal"><button class="buttonMenu" id="buttonMenu" onclick="closeMode()"><img src="assets/imgs/x-symbol-svgrepo-com.svg" alt="Fecha menu" class="closeMenu"></button></div>
+            <div class="btn-menu">
+                <button class="click" id="btnOpen" onclick="hiddenCaseTwo()">Entre em Contato</button>
+                <button id="btnClose" onclick="hiddenFormTwo()">Registre seu Caso</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1>Global Salesforce</h1>
+        <nav>
+            <button onclick="showModel()"><img src="assets/imgs/menu-svgrepo-com.svg" alt="menu" class="menu"></button>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <section class="home">
+            <h2>Bem-vindo à Global Ltda.</h2>
+        </section>
+
+        <section id="formulario-lead">
+            <div>
+                <button onclick="hiddenCase()" class="subtitle click" id="buttonForm">Entre em Contato</button>
+                <button onclick="hiddenForm()" class="subtitle" id="buttonCase">Registre seu Caso</button>
+            </div>
+
+            <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+            
+            <div id="form">
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Dak000006Kojq" method="POST" class="lead-form">
+                        <input type=hidden name="oid" value="00Dak000006Kojq">
+                        <input type=hidden name="retURL" value="https://www.google.com">
+                
+                        <p>Informações do contato</p>
+                        <div class="name">
+                            <div class="conteiner-input"><label for="first_name">Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="Nome (Opcional)"/><br></div>
+                            <div class="conteiner-input"><label for="last_name">Sobrenome<span>*</span></label><input  id="last_name" required   maxlength="80" name="last_name" size="20" type="text" placeholder="Sobrenome" /><br></div>
+                        </div>
+                
+                        <div class="contact">
+                            <div class="conteiner-input"><label for="company">Empresa<span>*</span></label><input  id="company" required maxlength="40" name="company" size="20" type="text" placeholder="Empresa"/><br></div>
+                            <div class="conteiner-input"><label for="phone">Telefone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" placeholder="Telefone (Opcional)"/><br></div>
+                            <div class="conteiner-input"><label for="email">E-mail</label><input  id="email" maxlength="80" name="email" size="20" type="text" placeholder="Email (Opcional)"/><br></div>
+                        </div>
+                
+                        <p>Endereço</p>
+                        <div class="address">
+                            <div class="conteiner-input"><label for="city">Cidade</label><input  id="city" maxlength="40" name="city" size="20" type="text" placeholder="Cidade (Opcional)"/><br></div>
+                
+                            <div class="conteiner-input"><label for="state">Estado/província</label><input  id="state" maxlength="20" name="state" size="20" type="text" placeholder="Estado/província (Opcional)"/><br></div>
+                        </div>
+                
+                
+                        <div class="description"><label for="description">Motivo do contato</label><textarea name="description"></textarea><br></div>
+                
+                        <div><input type="hidden" id="lead_source" name="lead_source" value="site"></div>
+                
+                        <div class="button"><button type="submit" name="submit">Enviar</button></div>
+                </form>
+            </div>
+
+        </section>
+
+        <div class="hidden formCase" id="formCase">
+            <section id="formulario-lead">
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00Dak000006Kojq"
+                    method="POST" class="lead-form">
+                    <input type=hidden name="orgid" value="00Dak000006Kojq">
+                    <input type=hidden name="retURL" value="https://www.google.com">
+    
+                    <p>Informações do contato</p>
+                    <div class="conteiner-input conteiner-inputCase"><label for="name">Nome do contato<span>*</span></label><input required id="name" maxlength="80" name="name" size="20"type="text" /><br></div>
+    
+                    <div class="conteiner-input conteiner-inputCase"><label for="email">Email<span>*</span></label><input required id="email" maxlength="80" name="email" size="20" type="text" /><br></div>
+    
+                    <div class="conteiner-input conteiner-inputCase"><label for="phone">Telefone<span>*</span></label><input required id="phone" maxlength="40" name="phone" size="20" type="text" /><br></div>
+    
+                    <div class="conteiner-input conteiner-inputCase"><label for="subject">Assunto<span>*</span></label><input required id="subject" maxlength="80" name="subject" size="20"type="text" /><br></div>
+    
+                    <div class="conteiner-input conteiner-inputCase"><label for="description">Descrição<span>*</span></label><textarea required name="description"></textarea><br></div>
+    
+                    <input type="hidden" id="external" name="external" value="1" /><br>
+    
+                    <div class="button"><button type="submit" name="submit">Enviar</button></div>
+    
+                </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Global. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        let form = document.getElementById('form');
+        let formCase = document.getElementById('formCase');
+        let buttonForm = document.getElementById('buttonForm');
+        let buttonCase = document.getElementById('buttonCase');
+        let buttonMenu = document.getElementById('buttonMenu');
+        let model = document.getElementById('model');
+        let btnOpen = document.getElementById('btnOpen');
+        let btnClose = document.getElementById('btnClose');
+
+
+        function hiddenCase() {
+            form.classList.remove('hidden');
+            buttonForm.classList.add('click');
+            formCase.classList.add('hidden');
+            buttonCase.classList.remove('click');
+        }
+
+        function hiddenForm() {
+            form.classList.add('hidden');
+            buttonForm.classList.remove('click');
+            formCase.classList.remove('hidden');
+            buttonCase.classList.add('click');
+        }
+
+        function showModel(){
+            model.classList.remove('hidden');
+        }
+
+        function closeMode(){
+            model.classList.add('hidden');
+        }
+
+        function hiddenCaseTwo(){
+            form.classList.remove('hidden');
+            formCase.classList.add('hidden');
+            btnOpen.classList.add('click');
+            btnClose.classList.remove('click');
+        }
+
+        function hiddenFormTwo(){
+            form.classList.add('hidden');
+            formCase.classList.remove('hidden');
+            btnClose.classList.add('click');
+            btnOpen.classList.remove('click');
+        }
+    </script>
+
+</body>
+
+</html>
